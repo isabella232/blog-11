@@ -27,11 +27,11 @@
   "site": {
     "title": "KubeVirt Blog",
     "description": "The KubeVirt project, working on the Kubernetes virtualization API.",
-    "logo": "",
+    "logo": "https://raw.githubusercontent.com/kubevirt/community/master/logo/kubevirt-pre.png",
     "cover": "",
     "delay": "",
     "postsPerPage": "",
-    "googleAnalytics": "",
+    "googleAnalytics": "UA-112760336-2",
     "disqus": ""
   },
   "socialnetwork": {
