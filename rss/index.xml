@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[KubeVirt Blog]]></title><description><![CDATA[The KubeVirt project, working on the Kubernetes virtualization API.]]></description><link>http://blog.kubevirt.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 10 Feb 2018 22:48:41 GMT</lastBuildDate><atom:link href="http://blog.kubevirt.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[This Week in KubeVirt 18]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[KubeVirt Blog]]></title><description><![CDATA[The KubeVirt project, working on the Kubernetes virtualization API.]]></description><link>http://blog.kubevirt.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 10 Feb 2018 22:49:59 GMT</lastBuildDate><atom:link href="http://blog.kubevirt.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[This Week in KubeVirt 18]]></title><description><![CDATA[<div class="paragraph">
 <p>This is a weekly update from the KubeVirt team.</p>
 </div>
 <div class="paragraph">
@@ -125,10 +125,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>["Kubernetes Cloud Autoscaler for Isolated Workloads"](<a href="https://www.youtube.com/watch?v=BzY2mzeVjrw" class="bare">https://www.youtube.com/watch?v=BzY2mzeVjrw</a>) by @rmohr</p>
+<p><a href="https://www.youtube.com/watch?v=BzY2mzeVjrw">"Kubernetes Cloud Autoscaler for Isolated Workloads"</a> by @rmohr</p>
 </li>
 <li>
-<p>["Outcast: Virtualization in a container world?"](<a href="https://www.youtube.com/watch?v=avxBRRwRa-8" class="bare">https://www.youtube.com/watch?v=avxBRRwRa-8</a>) by @fabiand</p>
+<p><a href="https://www.youtube.com/watch?v=avxBRRwRa-8">"Outcast: Virtualization in a container world?"</a> by @fabiand</p>
 </li>
 </ul>
 </div>
