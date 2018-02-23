@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[KubeVirt Blog]]></title><description><![CDATA[The KubeVirt project, working on the Kubernetes virtualization API.]]></description><link>http://blog.kubevirt.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 10 Feb 2018 22:49:59 GMT</lastBuildDate><atom:link href="http://blog.kubevirt.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[This Week in KubeVirt 18]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[KubeVirt Blog]]></title><description><![CDATA[The KubeVirt project, working on the Kubernetes virtualization API.]]></description><link>http://blog.kubevirt.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 23 Feb 2018 10:23:56 GMT</lastBuildDate><atom:link href="http://blog.kubevirt.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[This Week in KubeVirt 19]]></title><description><![CDATA[<div class="paragraph">
+<p>This is a bi-weekly update from the KubeVirt team.</p>
+</div>
+<div class="paragraph">
+<p>We are currently driven by</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Building a solid user-story around KubeVirt</p>
+</li>
+<li>
+<p>Caring about end-to-end (backend, core, ui)</p>
+</li>
+<li>
+<p>Getting dependencies into shape (storage)</p>
+</li>
+<li>
+<p>Improve the user-experience for users (UI, deployment)</p>
+</li>
+<li>
+<p>Being easier to be used on Kubernetes and OpenShift</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Within the last two weeks we achieved to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Support for native file-system PVs as disk storage (@alukiano, @davidvossel)
+(<a href="https://github.com/kubevirt/kubevirt/pull/734" class="bare">https://github.com/kubevirt/kubevirt/pull/734</a>,
+ <a href="https://github.com/kubevirt/kubevirt/pull/671" class="bare">https://github.com/kubevirt/kubevirt/pull/671</a>)</p>
+</li>
+<li>
+<p>Support for native pod networking for VMs (@vladikr)
+(<a href="https://github.com/kubevirt/kubevirt/pull/686" class="bare">https://github.com/kubevirt/kubevirt/pull/686</a>)</p>
+</li>
+<li>
+<p>Many patches to improve kubevirt-ansible usability
+(<a href="https://github.com/kubevirt/kubevirt-ansible/pulse/monthly" class="bare">https://github.com/kubevirt/kubevirt-ansible/pulse/monthly</a>)</p>
+</li>
+<li>
+<p>Introduce the kubernetes-device-plugins (@mpolednik)
+(<a href="https://github.com/kubevirt/kubernetes-device-plugins/" class="bare">https://github.com/kubevirt/kubernetes-device-plugins/</a>)</p>
+</li>
+<li>
+<p>Introduce the kubernetes-device-plugin for bridge networking (@mpolednik)
+(<a href="https://github.com/kubevirt/kubernetes-device-plugins/pull/4" class="bare">https://github.com/kubevirt/kubernetes-device-plugins/pull/4</a>)</p>
+</li>
+<li>
+<p>Add vendor/ tree (@davidvossel)
+(<a href="https://github.com/kubevirt/kubevirt/pull/715" class="bare">https://github.com/kubevirt/kubevirt/pull/715</a>)</p>
+</li>
+<li>
+<p>Expose disk bus (@fromani)
+(<a href="https://github.com/kubevirt/kubevirt/pull/672" class="bare">https://github.com/kubevirt/kubevirt/pull/672</a>)</p>
+</li>
+<li>
+<p>Allow deploying OpenShift in vagrant (@alukiano)
+(<a href="https://github.com/kubevirt/kubevirt/pull/631" class="bare">https://github.com/kubevirt/kubevirt/pull/631</a>)</p>
+</li>
+<li>
+<p>Release of v0.3.0-alpha.3
+(<a href="https://github.com/kubevirt/kubevirt/releases/tag/v0.3.0-alpha.3" class="bare">https://github.com/kubevirt/kubevirt/releases/tag/v0.3.0-alpha.3</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In addition to this, we are also working on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Implement VirtualMachinePresets (@stu-gott)
+(<a href="https://github.com/kubevirt/kubevirt/pull/652" class="bare">https://github.com/kubevirt/kubevirt/pull/652</a>)</p>
+</li>
+<li>
+<p>Implement OfflineVirtualMachines (@pkotas) (<a href="https://github.com/kubevirt/kubevirt/pull/667" class="bare">https://github.com/kubevirt/kubevirt/pull/667</a>)</p>
+</li>
+<li>
+<p>Expose CPU requirements in VM pod (@vladikr) (<a href="https://github.com/kubevirt/kubevirt/pull/673" class="bare">https://github.com/kubevirt/kubevirt/pull/673</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Take a look at the pulse, to get an overview over all changes of this week:
+<a href="https://github.com/kubevirt/kubevirt/pulse" class="bare">https://github.com/kubevirt/kubevirt/pulse</a></p>
+</div>
+<div class="paragraph">
+<p>Finally you can view our open issues at
+<a href="https://github.com/kubevirt/kubevirt/issues" class="bare">https://github.com/kubevirt/kubevirt/issues</a></p>
+</div>
+<div class="paragraph">
+<p>And keep track of events at our calendar
+<a href="https://calendar.google.com/embed?src=<a href="mailto:18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com">18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com</a>" class="bare">https://calendar.google.com/embed?src=<a href="mailto:18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com">18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com</a></a></p>
+</div>
+<div class="paragraph">
+<p>If you need some help or want to chat you can find us on
+<a href="irc://irc.freenode.net/#kubevirt" class="bare">irc://irc.freenode.net/#kubevirt</a></p>
+</div>]]></description><link>http://blog.kubevirt.io/2018/02/23/This-Week-in-Kube-Virt-19.html</link><guid isPermaLink="true">http://blog.kubevirt.io/2018/02/23/This-Week-in-Kube-Virt-19.html</guid><category><![CDATA[weekly]]></category><dc:creator><![CDATA[Fabian Deutsch]]></dc:creator><pubDate>Fri, 23 Feb 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[This Week in KubeVirt 18]]></title><description><![CDATA[<div class="paragraph">
 <p>This is a weekly update from the KubeVirt team.</p>
 </div>
 <div class="paragraph">
