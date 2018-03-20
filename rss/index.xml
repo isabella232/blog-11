@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[KubeVirt Blog]]></title><description><![CDATA[The KubeVirt project, working on the Kubernetes virtualization API.]]></description><link>http://blog.kubevirt.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 08 Mar 2018 12:57:29 GMT</lastBuildDate><atom:link href="http://blog.kubevirt.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[This Week in KubeVirt 20]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[KubeVirt Blog]]></title><description><![CDATA[The KubeVirt project, working on the Kubernetes virtualization API.]]></description><link>http://blog.kubevirt.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 20 Mar 2018 11:07:45 GMT</lastBuildDate><atom:link href="http://blog.kubevirt.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[This Week in KubeVirt 21]]></title><description><![CDATA[<div class="paragraph">
+<p>This is a weekly update from the KubeVirt team.</p>
+</div>
+<div class="paragraph">
+<p>In general there is now more work happening outside of the core kubevirt
+repository.</p>
+</div>
+<div class="paragraph">
+<p>We are currently driven by</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Building a solid user-story around KubeVirt</p>
+</li>
+<li>
+<p>Caring about end-to-end (backend, core, ui)</p>
+</li>
+<li>
+<p>Getting dependencies into shape (storage)</p>
+</li>
+<li>
+<p>Improve the user-experience for users (UI, deployment)</p>
+</li>
+<li>
+<p>Being easier to be used on Kubernetes and OpenShift</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Within the last two weeks we achieved to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Multi platform (Windows, Mac, Linux) support for virtctl (@slintes)
+(<a href="https://github.com/kubevirt/kubevirt/pull/811" class="bare">https://github.com/kubevirt/kubevirt/pull/811</a>)</p>
+</li>
+<li>
+<p>Stable UUIDs for OfflineVirtualMachines (@fromanirh)
+(<a href="https://github.com/kubevirt/kubevirt/pull/766" class="bare">https://github.com/kubevirt/kubevirt/pull/766</a>)</p>
+</li>
+<li>
+<p>OpenShift support for CI (@alukiano, @rmohr)
+(<a href="https://github.com/kubevirt/kubevirt/pull/792" class="bare">https://github.com/kubevirt/kubevirt/pull/792</a>)</p>
+</li>
+<li>
+<p>v2v improvements - for easier imports of existing VMs (@pkliczewski)
+(<a href="https://github.com/kubevirt/v2v-job" class="bare">https://github.com/kubevirt/v2v-job</a>)</p>
+</li>
+<li>
+<p>Data importer - to import existing disk images (@copejon @jeffvance)
+(<a href="https://github.com/kubevirt/containerized-data-importer" class="bare">https://github.com/kubevirt/containerized-data-importer</a>)</p>
+</li>
+<li>
+<p>POC Device Plugins for KVM and network (@mpolednik @phoracek)
+<a href="https://github.com/kubevirt/kubernetes-device-plugins" class="bare">https://github.com/kubevirt/kubernetes-device-plugins</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In addition to this, we are also working on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Subresources for consoles (@davidvossel)
+(<a href="https://github.com/kubevirt/kubevirt/pull/770" class="bare">https://github.com/kubevirt/kubevirt/pull/770</a>)</p>
+</li>
+<li>
+<p>Additional network glue approach (@vladikr)
+(<a href="https://github.com/kubevirt/kubevirt/pull/787" class="bare">https://github.com/kubevirt/kubevirt/pull/787</a>)</p>
+</li>
+<li>
+<p>virtctl convenience functions for start/stop of VMs (@sgott)
+(<a href="https://github.com/kubevirt/kubevirt/pull/817" class="bare">https://github.com/kubevirt/kubevirt/pull/817</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Take a look at the pulse, to get an overview over all changes of this week:
+<a href="https://github.com/kubevirt/kubevirt/pulse" class="bare">https://github.com/kubevirt/kubevirt/pulse</a></p>
+</div>
+<div class="paragraph">
+<p>Finally you can view our open issues at
+<a href="https://github.com/kubevirt/kubevirt/issues" class="bare">https://github.com/kubevirt/kubevirt/issues</a></p>
+</div>
+<div class="paragraph">
+<p>And keep track of events at our calendar
+<a href="https://calendar.google.com/embed?src=<a href="mailto:18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com">18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com</a>" class="bare">https://calendar.google.com/embed?src=<a href="mailto:18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com">18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com</a></a></p>
+</div>
+<div class="paragraph">
+<p>If you need some help or want to chat you can find us on
+<a href="irc://irc.freenode.net/#kubevirt" class="bare">irc://irc.freenode.net/#kubevirt</a></p>
+</div>]]></description><link>http://blog.kubevirt.io/2018/03/20/This-Week-in-Kube-Virt-21.html</link><guid isPermaLink="true">http://blog.kubevirt.io/2018/03/20/This-Week-in-Kube-Virt-21.html</guid><category><![CDATA[weekly]]></category><dc:creator><![CDATA[Fabian Deutsch]]></dc:creator><pubDate>Tue, 20 Mar 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[This Week in KubeVirt 20]]></title><description><![CDATA[<div class="paragraph">
 <p>This is a weekly update from the KubeVirt team.</p>
 </div>
 <div class="paragraph">
