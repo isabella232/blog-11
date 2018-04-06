@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>This Week in KubeVirt 22</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://blog.kubevirt.io/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//blog.kubevirt.io/themes/casper/assets/css/screen.css?v=1523041115841" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://blog.kubevirt.io/2018/04/06/This-Week-in-Kube-Virt-22.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="KubeVirt Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="This Week in KubeVirt 22" />
+    <meta property="og:description" content="This is a close-to weekly update from the KubeVirt team. In general there is now more work happening outside of the core kubevirt repository. We are currently driven by Building a solid user-story around KubeVirt Caring about end-to-end (backend, core, ui) Getting dependencies into shape (storage) Improve the user-experience for" />
+    <meta property="og:url" content="http://blog.kubevirt.io/2018/04/06/This-Week-in-Kube-Virt-22.html" />
+    <meta property="article:published_time" content="2018-04-06T00:00:00.000Z" />
+    <meta property="article:tag" content="weekly" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="This Week in KubeVirt 22" />
+    <meta name="twitter:description" content="This is a close-to weekly update from the KubeVirt team. In general there is now more work happening outside of the core kubevirt repository. We are currently driven by Building a solid user-story around KubeVirt Caring about end-to-end (backend, core, ui) Getting dependencies into shape (storage) Improve the user-experience for" />
+    <meta name="twitter:url" content="http://blog.kubevirt.io/2018/04/06/This-Week-in-Kube-Virt-22.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "KubeVirt Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Fabian Deutsch",
+        "image": "https://avatars1.githubusercontent.com/u/83456?v=4",
+        "url": "http://blog.kubevirt.io/author/fabiand/",
+        "sameAs": "https://dummdida.tumblr.com"
+    },
+    "headline": "This Week in KubeVirt 22",
+    "url": "http://blog.kubevirt.io/2018/04/06/This-Week-in-Kube-Virt-22.html",
+    "datePublished": "2018-04-06T00:00:00.000Z",
+    "keywords": "weekly",
+    "description": "This is a close-to weekly update from the KubeVirt team. In general there is now more work happening outside of the core kubevirt repository. We are currently driven by Building a solid user-story around KubeVirt Caring about end-to-end (backend, core, ui) Getting dependencies into shape (storage) Improve the user-experience for"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="KubeVirt Blog" href="http://blog.kubevirt.io/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body class="post-template tag-weekly nav-closed">
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="http://blog.kubevirt.io"><img src="https://raw.githubusercontent.com/kubevirt/community/master/logo/kubevirt-pre.png" alt="KubeVirt Blog" /></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-weekly">
+
+        <header class="post-header">
+            <h1 class="post-title">This Week in KubeVirt 22</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2018-04-06">06 April 2018</time>  on <a href="http://blog.kubevirt.io/tag/weekly/">weekly</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="paragraph">
+<p>This is a close-to weekly update from the KubeVirt team.</p>
+</div>
+<div class="paragraph">
+<p>In general there is now more work happening outside of the core kubevirt
+repository.</p>
+</div>
+<div class="paragraph">
+<p>We are currently driven by</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Building a solid user-story around KubeVirt</p>
+</li>
+<li>
+<p>Caring about end-to-end (backend, core, ui)</p>
+</li>
+<li>
+<p>Getting dependencies into shape (storage)</p>
+</li>
+<li>
+<p>Improve the user-experience for users (UI, deployment)</p>
+</li>
+<li>
+<p>Being easier to be used on Kubernetes and OpenShift</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Within the last two weeks we achieved to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Release KubeVirt v0.4.0
+(<a href="https://github.com/kubevirt/kubevirt/releases/tag/v0.4.0" class="bare">https://github.com/kubevirt/kubevirt/releases/tag/v0.4.0</a>)</p>
+</li>
+<li>
+<p>Many networking fixes (@mlsorensen @vladikr)
+(<a href="https://github.com/kubevirt/kubevirt/pull/870" class="bare">https://github.com/kubevirt/kubevirt/pull/870</a>
+ <a href="https://github.com/kubevirt/kubevirt/pull/869" class="bare">https://github.com/kubevirt/kubevirt/pull/869</a>
+ <a href="https://github.com/kubevirt/kubevirt/pull/847" class="bare">https://github.com/kubevirt/kubevirt/pull/847</a>
+ <a href="https://github.com/kubevirt/kubevirt/pull/856" class="bare">https://github.com/kubevirt/kubevirt/pull/856</a>
+ <a href="https://github.com/kubevirt/kubevirt/pull/839" class="bare">https://github.com/kubevirt/kubevirt/pull/839</a>
+ <a href="https://github.com/kubevirt/kubevirt/pull/830" class="bare">https://github.com/kubevirt/kubevirt/pull/830</a>)</p>
+</li>
+<li>
+<p>Aligned config reading for virtctl (@rmohr)
+(<a href="https://github.com/kubevirt/kubevirt/pull/860" class="bare">https://github.com/kubevirt/kubevirt/pull/860</a>)</p>
+</li>
+<li>
+<p>Subresource Aggregated API server for console endpoints (@vossel)
+(<a href="https://github.com/kubevirt/kubevirt/pull/770" class="bare">https://github.com/kubevirt/kubevirt/pull/770</a>)</p>
+</li>
+<li>
+<p>Enable OpenShift tests in CI (@alukiano @rmohr)
+(<a href="https://github.com/kubevirt/kubevirt/pull/833" class="bare">https://github.com/kubevirt/kubevirt/pull/833</a>)</p>
+</li>
+<li>
+<p>virtctl convenience functions for start/stop of VMs (@sgott)
+(<a href="https://github.com/kubevirt/kubevirt/pull/817" class="bare">https://github.com/kubevirt/kubevirt/pull/817</a>)</p>
+</li>
+<li>
+<p>Ansible - Improved Gluster support for kubevirt-ansible
+(<a href="https://github.com/kubevirt/kubevirt-ansible/pull/174" class="bare">https://github.com/kubevirt/kubevirt-ansible/pull/174</a>)</p>
+</li>
+<li>
+<p>POC Device Plugins for KVM and network (@mpolednik @phoracek)
+<a href="https://github.com/kubevirt/kubernetes-device-plugins" class="bare">https://github.com/kubevirt/kubernetes-device-plugins</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In addition to this, we are also working on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Additional network glue approach (@vladikr)
+(<a href="https://github.com/kubevirt/kubevirt/pull/787" class="bare">https://github.com/kubevirt/kubevirt/pull/787</a>)</p>
+</li>
+<li>
+<p>CRD validation using OpenAPIv3 (@vossel)
+(<a href="https://github.com/kubevirt/kubevirt/pull/850" class="bare">https://github.com/kubevirt/kubevirt/pull/850</a>)</p>
+</li>
+<li>
+<p>Windows VM tests (@alukiano)
+(<a href="https://github.com/kubevirt/kubevirt/pull/809" class="bare">https://github.com/kubevirt/kubevirt/pull/809</a>)</p>
+</li>
+<li>
+<p>Data importer - Functional tests
+(<a href="https://github.com/kubevirt/containerized-data-importer/pull/81" class="bare">https://github.com/kubevirt/containerized-data-importer/pull/81</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Take a look at the pulse, to get an overview over all changes of this week:
+<a href="https://github.com/kubevirt/kubevirt/pulse" class="bare">https://github.com/kubevirt/kubevirt/pulse</a></p>
+</div>
+<div class="paragraph">
+<p>Finally you can view our open issues at
+<a href="https://github.com/kubevirt/kubevirt/issues" class="bare">https://github.com/kubevirt/kubevirt/issues</a></p>
+</div>
+<div class="paragraph">
+<p>And keep track of events at our calendar
+<a href="https://calendar.google.com/embed?src=<a href="mailto:18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com">18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com</a>" class="bare">https://calendar.google.com/embed?src=<a href="mailto:18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com">18pc0jur01k8f2cccvn5j04j1g@group.calendar.google.com</a></a></p>
+</div>
+<div class="paragraph">
+<p>If you need some help or want to chat you can find us on
+<a href="irc://irc.freenode.net/#kubevirt" class="bare">irc://irc.freenode.net/#kubevirt</a></p>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="http://blog.kubevirt.io/author/fabiand/" style="background-image: url(https://avatars1.githubusercontent.com/u/83456?v&#x3D;4)"><span class="hidden">Fabian Deutsch's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="http://blog.kubevirt.io/author/fabiand/">Fabian Deutsch</a></h4>
+
+                    <p>Read <a href="http://blog.kubevirt.io/author/fabiand/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Germany</span>
+                    <span class="author-link icon-link"><a href="https://dummdida.tumblr.com">https://dummdida.tumblr.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=This%20Week%20in%20KubeVirt%2022&amp;url=http://blog.kubevirt.io/"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.kubevirt.io/"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.kubevirt.io/"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://blog.kubevirt.io">KubeVirt Blog</a> &copy; 2018</section>
+            <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    <script type="text/javascript" src="//blog.kubevirt.io/themes/casper/assets/js/jquery.fitvids.js?v=1523041115841"></script>
+    <script type="text/javascript" src="//blog.kubevirt.io/themes/casper/assets/js/index.js?v=1523041115841"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-112760336-2', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
